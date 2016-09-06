@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+		.header{
+			font-family:'Raleway', sans-serif;
+			color: purple;
+				}
+			.k-2nd{
+				font-family: 'Raleway', sans-serif;
+				font-size: 24px;
+				color: black;
+			}
+
+			.footer{
+				display: block;
+				background-color: #FFDAB9
+			}
+	</style>
+</head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<body background="C:\Users\Hira Mughal\Documents\School\FALL 2016\Mobile Web App\background-imager\Elegant_Background-3.jpg">
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">G.O.C</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="C:\Users\Hira Mughal\Documents\School\FALL 2016\Mobile Web App\GOC.html">Home</a></li>
+      <li><a href="#">Moroccan Footwear</a></li>
+      <li class="active"><a href="C:\Users\Hira Mughal\Documents\School\FALL 2016\Mobile Web App\JoyBundles.html">Joy Bundles</a></li>
+        </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h2 class= "header"><center>Back To School Supply Bundles</center></h2>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+
+		<div class="item active">
+			<center><img src="C:\Users\Hira Mughal\Documents\GOC\K-2nd grade bundle pics\Main pic.JPG" alt="SupplyBundle" img class="img-responsive img-rounded" width="666" height="512"></center>
+		</div>
+
+		<div class="item">
+			<center><img class="img-responsive img-rounded" src="C:\Users\Hira Mughal\Documents\GOC\K-2nd grade bundle pics\Composition books.JPG" alt="Composition Books" width="666" height="512" ></center></div>
+
+		<div class="item">
+			<center><img class="img-responsive img-rounded" src="C:\Users\Hira Mughal\Documents\GOC\Back to school bundle-20160828T210023Z\Back to school bundle\IMG_0713.JPG" alt="Folder" width="666" height="512" ></center></div>
+			<div class="item">
+				<center><img class="img-responsive img-rounded" src="C:\Users\Hira Mughal\Documents\GOC\Back to school bundle-20160828T210023Z\Back to school bundle\IMG_0715.JPG" alt="Folder" width="666" height="360" ></center></div>
+		</div>
+
+
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+</div>
+
+
+<footer class="footer">
+
+<div class="container"><div class="col-md-4"><span class="glyphicons glyphicons-fireplace">GOC by Zubair Mughal</span></div></div>
+</footer>
+</body>	
+<script>
+
+
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+$("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+$("#myCarousel").carousel("prev");
+});
+$(".right").click(function(){
+$("#myCarousel").carousel("next");
+});
+</script>
